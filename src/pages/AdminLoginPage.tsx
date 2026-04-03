@@ -10,8 +10,8 @@ import { Shield } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const AdminLoginPage = () => {
-  const [email, setEmail] = useState('admin@gmail.com');
-  const [password, setPassword] = useState('admin');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const { adminSignIn } = useAuth();
   const { t } = useLanguage();
